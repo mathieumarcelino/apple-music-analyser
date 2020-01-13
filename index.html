@@ -1,0 +1,115 @@
+<html lang="fr">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Apple Music Activity</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+
+      <div class="home" id="home">
+        <div class="top-home">
+          <h1 class="title-top-home">ANALYSE YOUR,<br>APPLE MUSIC ACTIVITY.</h1>
+          <div class="container-top-home" id="buttondiv">
+              <input class="input-top-home" type="file" id="inputfile" />
+              <input class="button-top-home" type="button" id="viewfile" value="Import file" />
+          </div>
+        </div>
+        <div class="bottom-home">
+          <h3 class="title-bottom-home">HOW DOES IT WORK?</h3>
+          <p>You will need the file Apple Music Play Activity.csv, which you can access from the privacy portal privacy.apple.com.</p>
+        </div>
+      </div>
+
+      <div class="box">
+          <div class="top-box">
+            <h2 class="title-top-box">YOUR STATS</h2>
+          </div>
+          <div class="bottom2-box">
+            <div class="left1-bottom-box">
+              <div class=item-left-bottom-box>
+                <p class="text-item-left-bottom-box">You've listened to</p>
+                <p class="text-item-left-bottom-box text-center" id="time-ecoute"></p>
+                <p class="text-item-left-bottom-box">of music</p>
+              </div>
+              <div class=item-left-bottom-box>
+                <p class="text-item-left-bottom-box">You listen on average</p>
+                <p class="text-item-left-bottom-box text-center" id="time-ecoute-day"></p>
+                <p class="text-item-left-bottom-box">per day</p>
+              </div>
+              <div class=item-left-bottom-box>
+                <p class="text-item-left-bottom-box">You've listened</p>
+                <p class="text-item-left-bottom-box text-center" id="nombre-musics"></p>
+                <p class="text-item-left-bottom-box">differents songs</p>
+              </div>
+              <div class=item-left-bottom-box>
+                <p class="text-item-left-bottom-box">You've listened</p>
+                <p class="text-item-left-bottom-box text-center" id="nombre-artists"></p>
+                <p class="text-item-left-bottom-box">differents artists</p>
+              </div>
+            </div>
+            <div class="right-bottom-box">
+            </div>
+          </div>
+        </div>
+
+      <div class="box">
+        <div class="top-box">
+          <h2 class="title-top-box">SONGS STATS</h2>
+        </div>
+        <div class="bottom-box">
+          <div class="left-bottom-box" id="songs-stats">
+          </div>
+          <div class="right-bottom-box" id="top-songs-stats">
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="top-box">
+          <h2 class="title-top-box">ARTISTS STATS</h2>
+        </div>
+        <div class="bottom-box">
+          <div class="left-bottom-box" id="artists-stats">
+          </div>
+          <div class="right-bottom-box" id="top-artists-stats">
+          </div>
+        </div>
+      </div>
+
+        <div class="box">
+          <div class="top-box">
+            <h2 class="title-top-box">DAYS STATS</h2>
+          </div>
+          <div class="bottom-box">
+            <div class="left-bottom-box" id="date-stats">
+            </div>
+            <div class="right-bottom-box" id="top-date-stats">
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+            <div class="top-box">
+              <h2 class="title-top-box">DEVICES STATS</h2>
+            </div>
+            <div class="bottom1-box">
+              <div class="left-bottom-box" id="devices-stats">
+              </div>
+              <div class="right-bottom-box" id="top-devices-stats">
+              </div>
+            </div>
+          </div>
+
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/script.js"></script>
+
+    </body>
+</html>

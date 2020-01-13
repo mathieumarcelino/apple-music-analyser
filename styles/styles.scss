@@ -1,0 +1,249 @@
+@import './mixins/medias';
+
+@font-face {
+    font-family: Code-Light;
+    src: url(../font/ModernSans-Light.woff);
+}
+@font-face {
+    font-family: Code-Bold;
+    src: url(../font/CODE-Bold.woff);
+}
+@font-face {
+    font-family: SF-Compact-Display-Semibold;
+    src: url(../font/SF-Compact-Display-Semibold.woff);
+}
+@font-face {
+    font-family: SF-Compact-Display-Regular;
+    src: url(../font/SF-Compact-Display-Regular.woff);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'SF-Compact-Display-Regular';
+    background-image: linear-gradient(80deg, #4ea9f8 0%, #896dfa 25%, #c165b6 50%, #896dfa 75%, #4ea9f8 100%);
+    background-size: 800% 800%;
+    animation: gradientBG 10s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.red{
+    color:#ea445a;
+    font-weight: bold;
+}
+
+.grey{
+    color:#8e8e92;
+}
+
+.home{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin:auto;
+}
+
+.top-home{
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-top-home{
+    font-size: 60px;
+    font-family: 'SF-Compact-Display-Semibold';
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-top-home{
+
+}
+
+.input-top-home{
+}
+
+.bottom-home{
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bottom-home{
+    width: 100%;
+    font-size: 30px;
+    font-family: 'SF-Compact-Display-Semibold';
+    display: flex;
+    color: #fff;
+    margin: auto 0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.button-top-home{
+    background: #ea445a;
+    height: 40px;
+    width: 120px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'SF-Compact-Display-Regular';
+}
+
+.box{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 50px auto;
+}
+
+.top-box{
+    width: 100%;
+    display: flex;
+}
+
+.title-top-box{
+    width: 100%;
+    font-size: 50px;
+    font-family: 'SF-Compact-Display-Semibold';
+    display: flex;
+    color: #fff;
+    margin: 0 0 5px 5px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bottom-box{
+    display: flex;
+    height: 450px;
+    width: 100%;
+}
+
+.bottom1-box{
+    display: flex;
+    height: 152px;
+    width: 100%;
+}
+
+.bottom2-box{
+    display: flex;
+    height: 250px;
+    width: 100%;
+}
+
+.left-bottom-box{
+    width:70%;
+    overflow-y:scroll;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+.left1-bottom-box{
+    width:70%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-bottom-box{
+    width:30%;
+    overflow-y:scroll;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-right-bottom-box{
+    font-family: 'SF-Compact-Display-Regular';
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin: 5px 0 5px 10px;
+    font-size:24px;
+}
+
+.item-box{
+    height: 50px;
+    border-bottom:1px solid #000;
+    display: flex;
+    overflow: scroll;
+    font-family: 'SF-Compact-Display-Regular';
+}
+
+.text-item-box{
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    height: 22px;
+    font-size: 16px;
+}
+
+.text1-item-box{
+    overflow: hidden;
+    height: 22px;
+    font-size: 16px;
+    font-family: 'SF-Compact-Display-Regular';
+}
+
+.subitem-box{
+    margin:auto;
+    width:15%;
+    display: flex;
+}
+
+.subitem1-box{
+    margin:auto;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subitem2-box{
+    margin:auto;
+    width:60%;
+    display: flex;
+}
+
+.subitem3-box{
+    margin:auto;
+    width:25%;
+    display: flex;
+}
+
+.item-left-bottom-box{
+    height: 45%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.text-item-left-bottom-box{
+    margin: auto 10px;
+    font-family: 'SF-Compact-Display-Regular';
+    font-size: 16px;
+}
+
+.text-center{
+    font-size: 18px;
+    font-family: 'SF-Compact-Display-Semibold';
+    color:#ea445a;
+}
